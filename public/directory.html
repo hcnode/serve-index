@@ -76,8 +76,8 @@
 <input id="search" type="text" placeholder="Search" autocomplete="off" />
 <div id="wrapper">
   <h1><a href="/">~</a>{linked-path}
-    &nbsp;&nbsp;&nbsp;<a href="#" onclick="this.href=location.href+'/_tar'" target="_blank">Tar</a>
-    &nbsp;&nbsp;&nbsp;<a href="#" onclick="this.href=location.pathname+ (location.pathname == '/'? '' : '/') + '_gallery'" target="_blank">Gallery</a>
+    &nbsp;&nbsp;&nbsp;<a href="#" onclick="this.href=location.href+(location.pathname=='/'?'':'/')+'_tar'" target="_blank">Tar</a>
+    &nbsp;&nbsp;&nbsp;<a href="#" onclick="this.href=location.href+(location.pathname=='/'?'':'/')+'_gallery'" target="_blank">Gallery</a>
   </h1>
   {files}
 </div>
